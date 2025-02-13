@@ -42,7 +42,7 @@ h1 {
 
 .cinnamon img {
     width: 100%;
-    max-width: 250px;
+    max-width: 200px;
     height: auto;
     object-fit: contain; /* Prevents unwanted stretching */
     
