@@ -92,3 +92,10 @@ function respond(answer) {
         setInterval(heartCreate, 1000);
     }
 }
+document.addEventListener("click", function playAudio() {
+    let audio = document.getElementById("myAudio");
+    audio.play().catch(error => console.log("Autoplay blocked:", error));
+
+    // Remove the event listener after the first click
+    document.removeEventListener("click", playAudio);
+}, { once: true }); // Ensures it only triggers once
